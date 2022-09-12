@@ -36,7 +36,7 @@ header{
     flex-flow: row nowrap;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.368);
     border-radius: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-right: 5%;
     margin-left: 5%;
     padding:10px;
@@ -53,7 +53,9 @@ header{
 
 .header-child{
     display: flex;
-    width: 30%;
+    width: 360px;
+    justify-content: center;
+    justify-self: center;
 }
 nav{
     margin-right: 5%;
@@ -79,10 +81,11 @@ li:hover{
 
 .logo-txt{
     align-items: center;
-    margin-left: -5%;
+    margin-left: 5%;
     flex-direction: column;
     margin-top: 5px;
     width:fit-content;
+    display: flex;
 }
 
 .logo-ink{
