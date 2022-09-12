@@ -159,4 +159,10 @@ li:hover{
 
 }
 
+#card-container{
+    height: 300px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 5%;
+}
 
