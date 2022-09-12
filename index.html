@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container"><!-- Main relative container for fixed header and background. -->
 
-        <header>
+        <header><!-- Begin combo header and navbar -->
             <div class="header-child logo-txt">
                 <span class="logo-ink">
                     Mitchell
@@ -19,25 +19,51 @@
                     Lemieux
                 </span>
             </div>
-            <nav class="header-child">
+            <div class="header-child">
                 <ul class="navbar">
                     <li>Home</li>
                     <li>About</li>
                     <li>Projects</li>
                     <li class="contact">Contact</li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </header><!-- end combo header nav -->
 
         <div class="hero">
-        </div>
+        </div><!-- empty div with background image through css, absolutely positioned for desktop. -->
 
         <main class="parent">
-            <h1>Mitchell<br/>Lemieux</h1>
+            <h1 class="content-header">Mitchell<br/>Lemieux</h1>
             <p class="accent">|Full Stack Web Developer|</p>
-            <div class="content">
-                Test
+            <div class="content-wrap">
+                <p id = "home">
+                    A team-oriented and solutions driven web developer, with a passion for finding elegant solutions to complex problems.
+
+                    My mission is to build engaging user experience through interactivity and seamless, attention grabbing design.
+                </p>
+                <div id="contact-button">
+                    <a>Contact Me</a>
+                </div>
             </div>
+            <h2 class="content-header">About<br>Me</h2>
+            <p class="accent">|My Story|</p>
+            <div class="content-wrap">
+                <p id="about">
+                    My fascination with programming and design began when I started working with a small, C++ based game engine at the age of twelve. <br/><br/>Since then, I've acquired a proficient working knowledge across a wide range of web development and software engineering skills including:
+                </p>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Multiple APIs</li>
+                    <li>MERN Stack</li>
+                </ul>
+            </div>
+
+            <h2 class="content-header">Projects</h2>
+
+            
         </main>
     </div>
 </body>
