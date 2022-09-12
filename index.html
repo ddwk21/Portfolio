@@ -21,10 +21,10 @@
             </div>
             <div class="header-child">
                 <ul class="navbar">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li class="contact">Contact</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </header><!-- end combo header nav -->
@@ -33,22 +33,22 @@
         </div><!-- empty div with background image through css, absolutely positioned for desktop. -->
 
         <main class="parent">
-            <h1 class="content-header">Mitchell<br/>Lemieux</h1>
+            <h1 class="content-header" id="home">Mitchell<br/>Lemieux</h1>
             <p class="accent">|Full Stack Web Developer|</p>
             <div class="content-wrap">
-                <p id = "home">
+                <p>
                     A team-oriented and solutions driven web developer, with a passion for finding elegant solutions to complex problems.
 
                     My mission is to build engaging user experience through interactivity and seamless, attention grabbing design.
                 </p>
                 <div id="contact-button">
-                    <a>Contact Me</a>
+                    <a href="#contact">Contact Me</a>
                 </div>
             </div>
-            <h2 class="content-header">About<br>Me</h2>
+            <h2 class="content-header" id="about">About<br>Me</h2>
             <p class="accent">|My Story|</p>
             <div class="content-wrap">
-                <p id="about">
+                <p>
                     My fascination with programming and design began when I started working with a small, C++ based game engine at the age of twelve. <br/><br/>Since then, I've acquired a proficient working knowledge across a wide range of web development and software engineering skills including:
                 </p>
 
@@ -61,14 +61,43 @@
                 </ul>
             </div>
 
-            <h2 class="content-header">Projects</h2>
+            <h2 class="content-header" id="projects">Projects</h2>
             <p class="accent">|My Body of Work|</p>
 
             <div class="content-wrap" id="card-container">
 
+                <div class="project-card" id="project-1">
+                    <a class="card-txt" href="https://ddwk21.github.io/week-one-challenge/">Horiseon Solutions</a>
+                </div>
+                <div class="project-card">
+                    <a class="card-txt">placeholder</a>
+                </div>
+                <div class="project-card">
+                    <a class="card-txt">placeholder</a>
+                </div>
+
             </div>
 
+            <h2 class="content-header" id="contact">Contact Me</h2>
+            <div class="content-box" id="contact-top">
+                <p class="accent" >
+                    |e-mail|
+                </p>
+                <p>ddwk21@gmail.com</p>
+                <p class="accent">
+                    |linked-in|
+                </p>
+                <p>Coming Soon!</p>
+                <p class="accent">
+                    |github|
+                </p>
+                <a href="https://github.com/ddwk21">ddwk21 on Github</a>
+            </div>
+            <div class="footer">
+                Designed and built by Mitchell Lemieux
+            </div>
         </main>
+
     </div>
 </body>
 </html>

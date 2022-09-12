@@ -14,7 +14,23 @@ html, body{
     margin:0px;
     width:100%;
     height:100%;
+    scroll-padding-top: 16vh;
    }
+/* custom scrollbar changes */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accentColor);
+  }
 
 .container{
     width: 100%;
@@ -67,6 +83,10 @@ li{
     text-decoration: underline;
     font-weight:400;
 }
+a{
+    color:inherit; /* stop stupid blue anchor tags */
+}
+
 
 .contact{
     border: 1px solid var(--accentColor);
@@ -83,7 +103,6 @@ li:hover{
     align-items: center;
     margin-left: 5%;
     flex-direction: column;
-    margin-top: 5px;
     width:fit-content;
     display: flex;
 }
@@ -167,5 +186,58 @@ li:hover{
     background-color: white;
     border-radius: 50px;
     margin-top: 5%;
+    overflow-y: scroll;
 }
 
+.project-card{
+    width: 90%;
+    height: 300px;
+    background-color: gray;
+    border-radius: 50px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#project-1{
+    background-image: url(./images/project-screenshot-1.png);
+    background-size: contain;
+}
+.project-card a{
+    color: transparent;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.project-card a:hover{
+    color:var(--accentColor);
+    text-shadow: 0 0 3px var(--accentColor);
+    box-shadow: inset 0 0 20px black;
+    backdrop-filter: brightness(40%);
+}
+
+#contact-top{
+    margin-top:10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 8vh;
+    background: white;
+    margin-top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--accentColor);
+    border-radius: 50px;
+}
