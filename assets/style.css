@@ -99,6 +99,8 @@ li:hover{
     color: var(--accentColor);
 }
 
+
+/* These two are logo txt spans and their containers. */
 .logo-txt{
     align-items: center;
     margin-left: 5%;
@@ -126,12 +128,13 @@ li:hover{
     align-self: center;
 }
 
+/* Holds all content to the right of fixed hero */
 .parent{
     display: flex;
     height: auto;
     width: auto;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     margin-right: 8%;
     margin-left: 40%;
@@ -156,11 +159,15 @@ li:hover{
     color: var(--accentColor);
 }
 
+/* For main content below headers */
 .content-wrap{
     width: 80%;
     color: rgb(80, 80, 80);
     line-height: 30px;
     font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact-button{
@@ -181,8 +188,10 @@ li:hover{
 
 }
 
+/* scrolling card container for projects */
 #card-container{
     height: 300px;
+    width: 300px;
     background-color: white;
     border-radius: 50px;
     margin-top: 5%;
@@ -205,7 +214,7 @@ li:hover{
     background-image: url(./images/project-screenshot-1.png);
     background-size: contain;
 }
-.project-card a{
+.project-card a{ /* make the text in project cards invisible until hover */
     color: transparent;
     z-index: 5;
     width: 100%;
@@ -220,7 +229,7 @@ li:hover{
     text-shadow: 0 0 3px var(--accentColor);
     box-shadow: inset 0 0 20px black;
     backdrop-filter: brightness(40%);
-}
+}/* hover effects for project card display */
 
 #contact-top{
     margin-top:10%;
@@ -240,23 +249,38 @@ li:hover{
     justify-content: center;
     border: 1px solid var(--accentColor);
     border-radius: 50px;
+    color:rgb(80, 80, 80);
+    font-size: x-small;
 }
 
+
+/* responsiveness media queries for phone and tablet */
 @media screen and (max-width: 935px)
 {
     .hero{
         position:static;
         display: block;
-        width:100%;
+        width:84%;
         height: 650px;
-        margin-right: 8%;
-        margin-left: 8%;
+        margin-left:8%;
+        background-position-y: 50px;
     }
     .parent{
         margin-left: 8%;
     }
-    .header{
-        border-radius: 0 px;
+    header{
+        border-radius: 0;
         width: 100%;
+        margin: 0;
+        top:0px;
+    }
+    .navbar{
+        gap:3%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar{
+        gap:1%;
     }
 }
