@@ -1,5 +1,7 @@
 #Mitchell Lemieux Portfolio
 
+deployed link: https://ddwk21.github.io/Portfolio/
+
 ##About
 
 This dev portfolio contains information about me,
